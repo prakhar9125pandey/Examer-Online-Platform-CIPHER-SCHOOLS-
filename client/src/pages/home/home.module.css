@@ -1,0 +1,53 @@
+.container {
+  background-color: rgb(226, 225, 225);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+
+  .auth_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5rem;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 80vh;
+    width: 80vw;
+    margin: auto auto;
+    background-color: white;
+
+    .activeComp {
+      display: flex;
+      gap: 5rem;
+      text-align: center;
+      font-weight: 700;
+
+      .register {
+        all: unset;
+        padding: 0.5rem 1.5rem;
+        width: 4rem;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .login {
+        all: unset;
+        padding: 0.5rem 1.5rem;
+        width: 4rem;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .activeState {
+        box-shadow: rgba(34, 34, 160, 0.35) 0px 5px 15px;
+      }
+    }
+
+    .m {
+      /* background-color: red; */
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+  }
+}

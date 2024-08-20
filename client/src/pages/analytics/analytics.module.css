@@ -1,0 +1,68 @@
+.analytics {
+  background-color: rgb(226, 225, 225);
+  padding: 4rem;
+  min-height: 100vh;
+
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(79, 79, 245);
+    margin-bottom: 2rem;
+  }
+
+  .tableWrapper {
+    position: relative;
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        background-color: rgb(70, 70, 252);
+        color: white;
+        width: 100%;
+      }
+
+      .headTH {
+        padding: 1rem 0 1rem 0;
+      }
+
+      tbody {
+        tr {
+          &:nth-child(odd) {
+            background-color: rgb(226, 225, 225);
+          }
+          &:nth-child(even) {
+            background-color: var(--blue-btn);
+          }
+
+          td {
+            text-align: center;
+            padding: 1rem 0rem 1rem 0;
+          }
+
+          .actions {
+            display: flex;
+            justify-content: center;
+            gap: 0 0.8rem;
+
+            .icon {
+              cursor: pointer;
+            }
+          }
+
+          .questionWise {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

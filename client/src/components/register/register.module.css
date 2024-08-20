@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+
+  .form_input {
+    display: flex;
+    align-items: center;
+    gap: 0 3rem;
+    justify-content: space-between;
+    position: relative;
+
+    .label {
+      font-weight: 700;
+    }
+
+    .inputField {
+      border-radius: 5px 5px 0 0;
+      outline: none;
+      padding: 5px 28px 2px 5px;
+      border: 1px solid gray;
+      font-size: 16px;
+    }
+
+    .error {
+      position: absolute;
+      bottom: -1.2rem;
+      right: 0.1rem;
+      color: red;
+      font-size: 12px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  .registerBtnDiv {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      background-color: var(--blue-btn);
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+      padding: 0.6rem 5rem;
+      width: fit-content;
+      font-weight: 700;
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.09);
+      }
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

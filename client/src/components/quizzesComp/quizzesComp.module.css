@@ -1,0 +1,27 @@
+.quizzesComp {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    .quizTitle {
+      font-size: 22px;
+    }
+  }
+
+  .totalQuizAndIcon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(244, 123, 3);
+  }
+
+  .date {
+    color: green;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,52 @@
+.sidebar {
+  /* background-color: aqua; */
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid rgb(203, 201, 201);
+
+  .title {
+    text-align: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    /* padding: 1rem; */
+
+    .link {
+      text-decoration: none !important;
+      color: black;
+    }
+
+    .contentTitle {
+      font-size: 20px;
+      padding: 0.5rem 1rem;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      &:hover {
+        cursor: pointer;
+        box-shadow: rgba(24, 24, 24, 0.35) 0px 2px 8px;
+      }
+    }
+    .selected {
+      border: 1px solid transparent;
+      border-radius: 8px;
+      box-shadow: rgba(24, 24, 24, 0.35) 0px 2px 8px;
+    }
+  }
+
+  .logout {
+    all: unset;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+}

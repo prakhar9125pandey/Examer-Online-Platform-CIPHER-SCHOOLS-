@@ -1,0 +1,86 @@
+.modal {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .quizNameInput {
+    width: 100%;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+    outline: none;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: gray;
+
+    .optionToSelect {
+      all: unset;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px;
+      padding: 0.3rem 0.8rem;
+      width: 8rem;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .selected {
+      transition-duration: 100ms;
+      background-color: green;
+      color: white;
+    }
+  }
+
+  .btns {
+    display: flex;
+    gap: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+
+    .cancelBtn {
+      all: unset;
+      width: 100%;
+      text-align: center;
+      padding: 0.3rem 0.8rem;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .continueBtn {
+      all: unset;
+      width: 100%;
+      text-align: center;
+      padding: 0.3rem 0.8rem;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+      border-radius: 8px;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.shareBtnDiv {
+  margin: auto;
+
+  .shareBtn {
+    all: unset;
+    text-align: center;
+    padding: 0.3rem 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 8px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(1.09);
+    }
+  }
+}

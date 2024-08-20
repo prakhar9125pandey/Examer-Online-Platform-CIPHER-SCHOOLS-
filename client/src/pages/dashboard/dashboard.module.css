@@ -1,0 +1,42 @@
+.dashboard {
+  background-color: rgb(226, 225, 225);
+  padding: 4rem;
+  min-height: 100vh;
+
+  .mainContent {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+
+    .singleContent {
+      background-color: white;
+      width: 100%;
+      text-align: center;
+      border-radius: 8px;
+      padding: 0.8rem 2rem 0.8rem 2rem;
+      font-weight: 600;
+
+      .heading {
+        font-size: 28px;
+      }
+      .para {
+        font-size: 28px;
+      }
+      span {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .quizzesComp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+.dashboard {
+  background-image: url('/path/to/your/image.jpg');
+  background-size: cover;
+  background-position: center;
+}
